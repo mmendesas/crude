@@ -1,0 +1,23 @@
+{
+  "name": "crude",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:compile": "node-sass -w -r --include-path ./src/scss ./src/scss/main.scss ./dist/css/crude.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmendesas/crude.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmendesas/crude/issues"
+  },
+  "homepage": "https://github.com/mmendesas/crude#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
