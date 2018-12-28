@@ -1,10 +1,17 @@
 @charset 'UTF-8';
 
-// configuration and helpers
+// 1. configuration and helpers
 @import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
 
-// vendors
+// 2. vendors
 @import 'vendors/normalize';
 
-// base
+// 3. base
 @import 'base/reset';
+@import 'base/typography';
+@import 'base/helpers';
+
+// 4. components
+@import 'components/buttons';
