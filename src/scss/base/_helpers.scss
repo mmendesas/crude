@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+// Classic clearfix 
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: block;
+}
+
+.clearfix:after {
+    clear: both;
+}

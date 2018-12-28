@@ -1,4 +1,10 @@
-$main-color: green;
-body {
-    background-color: $main-color;
-}
+@charset 'UTF-8';
+
+// configuration and helpers
+@import 'abstracts/variables';
+
+// vendors
+@import 'vendors/normalize';
+
+// base
+@import 'base/reset';

@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// Reset - basic styles
+// -----------------------------------------------------------------------------
+/**
+* Reset box sizing to border box
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+/**
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
