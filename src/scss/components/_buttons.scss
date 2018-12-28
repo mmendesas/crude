@@ -1,8 +1,12 @@
 // -----------------------------------------------------------------------------
 // Buttons
 // -----------------------------------------------------------------------------
-$buttons: ( '.button, a.button, button, [type=button], [type=submit]');
 
+/**
+ * select some buttons
+ */
+
+$buttons: ( '.button, a.button, button, [type=button], [type=submit]');
 #{$buttons} {
     display: inline-block;
     background: #1E6BD6;

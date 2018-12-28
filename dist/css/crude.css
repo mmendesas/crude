@@ -336,6 +336,14 @@ body {
 .text-center {
   text-align: center; }
 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+/**
+ * select some buttons
+ */
 .button, a.button, button, [type=button], [type=submit] {
   display: inline-block;
   background: #1E6BD6;
@@ -357,3 +365,36 @@ button::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border: 0;
   padding: 0; }
+
+[type=color],
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=url],
+[type=week],
+[type=time],
+select,
+textarea {
+  /* styles go here */
+  display: block;
+  padding: .5rem;
+  background: transparent;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  font-size: .95rem; }
+
+label {
+  font-weight: 600;
+  font-size: .9rem;
+  display: block;
+  margin: .5rem 0; }

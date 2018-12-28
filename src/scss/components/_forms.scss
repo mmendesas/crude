@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// Forms
+// -----------------------------------------------------------------------------
+[type=color],
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=url],
+[type=week],
+[type=time],
+select,
+textarea {
+    /* styles go here */
+    display: block;
+    padding: .5rem;
+    background: transparent;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    font-size: .95rem;
+}
+
+label {
+    font-weight: 600;
+    font-size: .9rem;
+    display: block;
+    margin: .5rem 0;
+}
