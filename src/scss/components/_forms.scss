@@ -1,6 +1,9 @@
 // -----------------------------------------------------------------------------
 // Forms
 // -----------------------------------------------------------------------------
+
+/* Forms */
+
 [type=color],
 [type=date],
 [type=datetime],
@@ -17,7 +20,6 @@
 [type=time],
 select,
 textarea {
-    /* styles go here */
     display: block;
     padding: .5rem;
     background: transparent;

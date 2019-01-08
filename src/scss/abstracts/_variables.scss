@@ -3,6 +3,68 @@
 // -----------------------------------------------------------------------------
 
 
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': (min-width: 480px),
+  'medium': (min-width: 800px),
+  'large': (min-width: 1000px),
+  'huge': (min-width: 1200px),
+) !default;
+
+/* Breakpoints */
+$mobile: map-get($breakpoints, 'small');
+$tablet: map-get($breakpoints, 'medium');
+$desktop: map-get($breakpoints, 'large');
+
+
+/* Colors */
+$background: white; 
+$primary-color: #29de7d;
+$secondary-color: #0366EE;
+$gray: rgb(150, 149, 149); 
+$darkgray: darken($gray, 15%);
+$link-color: $secondary-color;
+$link-hover-color: darken($link-color, 15%);
+$highlight: #ffeea8;
+$error: #D33C40;
+
+/* Borders */
+$border-width: 1px;
+$border-style: solid;
+$border-color: #dedede;
+$border-radius: 4px;
+$borders: $border-width $border-style $border-color;
+
+/* Links */
+
+$link-color: darken($primary-color, 10%);
+$link-hover-color: lighten($link-color, 10%);
+
+/* Buttons */
+$button-background: $secondary-color;
+$button-color: #FFF;
+$button-font-weight: 600;
+$button-border-width: 0px;
+$button-border-style: solid;
+$button-border-color: $button-background;
+$button-border-radius: $border-radius;
+$button-borders: $button-border-width $button-border-style $button-border-color;
+
+// muted buttons
+$muted-border: 1px solid $gray;
+$muted-border-hover: 1px solid darken($gray, 30%);
+$muted-background-hover: lighten($gray, 20%);
+$muted-color: darken($gray, 50%);
+
+
+/* Forms */
+$input-fields: ('[type=color], [type=date], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
+$input-buttons: ('[type=submit], [type=reset], [type=button]');
+$placeholder: $darkgray;
+$input-height: 2.3em;
+
 /// Regular font family
 /// @type List
 $text-font-stack: ('Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif) !default;
@@ -28,11 +90,3 @@ $mid-grey: rgb(153, 153, 153) !default;
 $dark-grey: rgb(68, 68, 68) !default;
 
 
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
-) !default;
