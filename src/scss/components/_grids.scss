@@ -1,0 +1,32 @@
+/* Grid */
+
+$grid-spacing: 3%;
+$grid-columns: 12;
+
+
+.row {
+    display:block;
+	clear:both;
+	content:'';
+	& + & {
+		margin-top:$grid-spacing;
+	}
+}
+
+
+[class^="col-"] {
+    float: left;
+    background: lighten($primary-color, 20%);
+    outline: 1px solid gray;
+    padding: 0 $grid-spacing;
+    margin-bottom: 20px;
+    &:last-child {
+		margin-right:0%;
+	}
+}
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        width: 100% / $grid-columns * $i;
+    }
+}

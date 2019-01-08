@@ -343,9 +343,63 @@ body {
   text-align: center; }
 
 .container {
-  max-width: 600px;
+  max-width: 960px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem; }
+
+/* Grid */
+.row {
+  display: block;
+  clear: both;
+  content: ''; }
+  .row + .row {
+    margin-top: 3%; }
+
+[class^="col-"] {
+  float: left;
+  background: #81ecb3;
+  outline: 1px solid gray;
+  padding: 0 3%;
+  margin-bottom: 20px; }
+  [class^="col-"]:last-child {
+    margin-right: 0%; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
 
 /* Buttons */
 .button, a.button, button, [type=button], [type=submit] {
