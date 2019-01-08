@@ -43,7 +43,7 @@ $link-color: darken($primary-color, 10%);
 $link-hover-color: lighten($link-color, 10%);
 
 /* Buttons */
-$button-background: $secondary-color;
+$button-background: $primary-color;
 $button-color: #FFF;
 $button-font-weight: 600;
 $button-border-width: 0px;

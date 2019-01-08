@@ -21,6 +21,7 @@ $my-buttons: ( '.button, a.button, button, [type=button], [type=submit]');
     white-space: nowrap;
     vertical-align: middle;
     text-decoration: none;
+    outline: none;
 }
 
 %buttons-hover {

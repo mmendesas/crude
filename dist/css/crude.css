@@ -351,9 +351,9 @@ body {
 .button, a.button, button, [type=button], [type=submit] {
   display: inline-block;
   line-height: 1;
-  border: 0px solid #0366EE;
+  border: 0px solid #29de7d;
   border-radius: 4px;
-  background: #0366EE;
+  background: #29de7d;
   color: #FFF;
   font-weight: 600;
   height: 2.3em;
@@ -364,10 +364,11 @@ body {
   font-size: .9rem;
   white-space: nowrap;
   vertical-align: middle;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
 
 .button:hover, a.button:hover, button:hover, [type=button]:hover, [type=submit]:hover {
-  background: #0250bc; }
+  background: #1cb864; }
 
 .button.muted, a.button.muted, button.muted, .muted[type=button], .muted[type=submit] {
   background: transparent;
@@ -379,33 +380,38 @@ body {
     color: #969595; }
 
 /* Forms */
-[type=color],
-[type=date],
-[type=datetime],
-[type=datetime-local],
-[type=email],
-[type=month],
-[type=number],
-[type=password],
-[type=search],
-[type=tel],
-[type=text],
-[type=url],
-[type=week],
-[type=time],
-select,
-textarea {
-  display: block;
-  padding: .5rem;
+/* input fields (except buttons)*/
+[type=color], [type=date], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea {
+  display: inline-block;
+  padding: .6rem;
   background: transparent;
   vertical-align: middle;
   width: 100%;
-  max-width: 100%;
-  border: 1px solid #cdcdcd;
+  max-width: 100% 4;
+  border: 1px solid #dedede;
   border-radius: 4px;
-  font-size: .95rem; }
+  font-size: .95rem;
+  outline: none; }
+
+/* input fields on hover */
+[type=color]:hover, [type=date]:hover, [type=datetime-local]:hover, [type=email]:hover, [type=month]:hover, [type=number]:hover, [type=password]:hover, [type=search]:hover, [type=tel]:hover, [type=text]:hover, [type=url]:hover, [type=week]:hover, [type=time]:hover, select:hover, textarea:hover {
+  border: 1px solid #c5c5c5; }
+
+/* input fields on focus */
+[type=color]:focus, [type=color]:active, [type=date]:focus, [type=date]:active, [type=datetime-local]:focus, [type=datetime-local]:active, [type=email]:focus, [type=email]:active, [type=month]:focus, [type=month]:active, [type=number]:focus, [type=number]:active, [type=password]:focus, [type=password]:active, [type=search]:focus, [type=search]:active, [type=tel]:focus, [type=tel]:active, [type=text]:focus, [type=text]:active, [type=url]:focus, [type=url]:active, [type=week]:focus, [type=week]:active, [type=time]:focus, [type=time]:active, select:focus, select:active, textarea:focus, textarea:active {
+  border: 1px solid #81ecb3;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #aef2ce; }
+
+[type=color], [type=date], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea {
+  width: 100%;
+  max-width: 100%; }
+
+textarea {
+  height: auto;
+  display: block; }
 
 label {
+  max-width: 100%;
   font-weight: 600;
   font-size: .9rem;
   display: block;

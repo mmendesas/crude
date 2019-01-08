@@ -1,37 +1,54 @@
-// -----------------------------------------------------------------------------
-// Forms
-// -----------------------------------------------------------------------------
-
 /* Forms */
 
-[type=color],
-[type=date],
-[type=datetime],
-[type=datetime-local],
-[type=email],
-[type=month],
-[type=number],
-[type=password],
-[type=search],
-[type=tel],
-[type=text],
-[type=url],
-[type=week],
-[type=time],
-select,
-textarea {
-    display: block;
-    padding: .5rem;
+$input-fields: ('[type=color], [type=date], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea');
+/* input fields (except buttons)*/
+
+%forms {
+    display: inline-block;
+    padding: .6rem;
     background: transparent;
     vertical-align: middle;
     width: 100%;
-    max-width: 100%;
-    border: 1px solid #cdcdcd;
-    border-radius: 4px;
+    max-width: 100%4;
+    border: $border-width $border-style $border-color;
+    border-radius: $border-radius;
     font-size: .95rem;
+    outline: none;
+}
+
+/* input fields on hover */
+
+%forms-hover {
+    border: $border-width $border-style darken($border-color, 10%);
+}
+
+/* input fields on focus */
+
+%forms-focus {
+    border: 1px solid lighten($link-color, 30%);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px lighten($link-color, 40%);
+}
+
+#{$input-fields} {
+    width: 100%;
+    max-width: 100%;
+    @extend %forms;
+    &:hover {
+        @extend %forms-hover;
+    }
+    &:focus,
+    &:active {
+        @extend %forms-focus;
+    }
+}
+
+textarea {
+    height: auto;
+    display: block; // Remove margin difference from textarea and input groups
 }
 
 label {
+    max-width: 100%;
     font-weight: 600;
     font-size: .9rem;
     display: block;
