@@ -1,200 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crude - Sass Boilerplate</title>
 
     <link rel="stylesheet" href="css/crude.css" />
+    <link rel="stylesheet" href="css/custom.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="text-center">
-      <img
-        style="height: 60px; margin-top: 30px"
-        src="images/logo.png"
-        alt="logo crude"
-      />
+        <img style="height: 60px; margin-top: 30px" src="images/logo.png" alt="logo crude" />
     </header>
-    <main>
-      <section>
-        <h2>Typography</h2>
+    <main class="container">
+        <section>
+            <h2>Typography</h2>
 
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6">
+                    <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code></span></h1>
+                    <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code></span></h2>
+                    <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code></span></h3>
+                    <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code></span></h4>
+                    <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code></span></h5>
+                    <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code></span></h6>
+                </div>
+            </div>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teneo,
-          inquit, finem illi videri nihil dolere.
-          <i>Falli igitur possumus.</i> Duo Reges: constructio interrete. Quid
-          igitur, inquit, eos responsuros putas?
-          <a href="http://loripsum.net/" target="_blank"
-            >Quis Aristidem non mortuum diligit?</a
-          >
-          Hoc tu nunc in illo probas.
-        </p>
 
-        <p>
-          <i>Et nemo nimium beatus est;</i>
-          <mark>Id enim natura desiderat.</mark> <b>Venit ad extremum.</b>
-        </p>
-      </section>
-      <section>
-        <h1>Buttons</h1>
-        <div class="container">
-          <div class="button">Div</div>
-          <a class="button" href="#!">Link</a> <button>Button</button>
-          <input type="button" value="Input" />
-          <div class="button muted">muted</div>
-        </div>
-      </section>
-      <section>
-        <h1>Form</h1>
-        <div class="container">
-          <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Name" />
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Email Address" />
-            <label for="gender">Gender</label>
-            <select id="gender">
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-      </section>
 
-      <section>
-        <h1>GRID</h1>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-          </div>
-          <div class="row">
-            <div class="col-2">#2</div>
-            <div class="col-2">#2</div>
-            <div class="col-2">#2</div>
-            <div class="col-2">#2</div>
-            <div class="col-2">#2</div>
-            <div class="col-2">#2</div>
-          </div>
-          <div class="row">
-            <div class="col-3">#3</div>
-            <div class="col-3">#3</div>
-            <div class="col-3">#3</div>
-            <div class="col-3">#3</div>
-          </div>
-          <div class="row">
-            <div class="col-4">#4</div>
-            <div class="col-4">#4</div>
-            <div class="col-4">#4</div>
-          </div>
-          <div class="row">
-            <div class="col-5">#5</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-          </div>
-          <div class="row">
-            <div class="col-6">#6</div>
-            <div class="col-6">#6</div>
-          </div>
-          <div class="row">
-            <div class="col-7">#7</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-          </div>
-          <div class="row">
-            <div class="col-8">#8</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-          </div>
-          <div class="row">
-            <div class="col-9">#9</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-          </div>
-          <div class="row">
-            <div class="col-10">#10</div>
-            <div class="col-1">#1</div>
-            <div class="col-1">#1</div>
-          </div>
-          <div class="row"><div class="col-12">#12</div></div>
-        </div>
-      </section>
-      <section>
-        <h2>Basic HTML Table</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Teneo,
+                inquit, finem illi videri nihil dolere.
+                <i>Falli igitur possumus.</i> Duo Reges: constructio interrete. Quid
+                igitur, inquit, eos responsuros putas?
+                <a href="http://loripsum.net/" target="_blank">Quis Aristidem non mortuum diligit?</a>
+                Hoc tu nunc in illo probas.
+            </p>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Age</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Jill</td>
-              <td>Smith</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Eve</td>
-              <td>Jackson</td>
-              <td>94</td>
-            </tr>
-            <tr>
-              <td>John</td>
-              <td>Doe</td>
-              <td>80</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Footer 1</td>
-              <td>Footer 2</td>
-              <td>Footer 3</td>
-            </tr>
-          </tfoot>
-        </table>
-      </section>
+            <p>
+                <i>Et nemo nimium beatus est;</i>
+                <mark>Id enim natura desiderat.</mark> <b>Venit ad extremum.</b>
+            </p>
+        </section>
+        <section>
+            <h1>Buttons</h1>
+            <div class="container">
+                <div class="button">Div</div>
+                <a class="button" href="#!">Link</a> <button>Button</button>
+                <input type="button" value="Input" />
+                <div class="button muted">muted</div>
+            </div>
+        </section>
+        <section>
+            <h1>Form</h1>
+            <div class="container">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Name" />
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email Address" />
+                    <label for="gender">Gender</label>
+                    <select id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h1>GRID</h1>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                </div>
+                <div class="row">
+                    <div class="col-2">#2</div>
+                    <div class="col-2">#2</div>
+                    <div class="col-2">#2</div>
+                    <div class="col-2">#2</div>
+                    <div class="col-2">#2</div>
+                    <div class="col-2">#2</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">#3</div>
+                    <div class="col-3">#3</div>
+                    <div class="col-3">#3</div>
+                    <div class="col-3">#3</div>
+                </div>
+                <div class="row">
+                    <div class="col-4">#4</div>
+                    <div class="col-4">#4</div>
+                    <div class="col-4">#4</div>
+                </div>
+                <div class="row">
+                    <div class="col-5">#5</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                </div>
+                <div class="row">
+                    <div class="col-6">#6</div>
+                    <div class="col-6">#6</div>
+                </div>
+                <div class="row">
+                    <div class="col-7">#7</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                </div>
+                <div class="row">
+                    <div class="col-8">#8</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                </div>
+                <div class="row">
+                    <div class="col-9">#9</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                </div>
+                <div class="row">
+                    <div class="col-10">#10</div>
+                    <div class="col-1">#1</div>
+                    <div class="col-1">#1</div>
+                </div>
+                <div class="row">
+                    <div class="col-12">#12</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Basic HTML Table</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>80</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer 1</td>
+                        <td>Footer 2</td>
+                        <td>Footer 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
     </main>
-  </body>
+</body>
+
 </html>
